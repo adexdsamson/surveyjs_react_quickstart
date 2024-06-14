@@ -7,19 +7,21 @@ import { json } from "../data/survey_json.js";
 
 StylesManager.applyTheme("defaultV2");
 
-function onValueChanged(_, options) {
-  console.log("New value: " + options.value);
-}
 
-function onComplete(survey) {
-  console.log("Survey complete! Results: " + JSON.stringify(survey.data));
-}
 
 export function SurveyPage() {
   const model = new Model(json);
+
+  function onValueChanged(_, options) {
+    console.log("New value: " + options.value);
+  }
+
+  function onComplete(survey) {
+    console.log("Survey complete! Results: " + JSON.stringify(survey.data));
+  }
+
   return (
     <div className="container">
-      <h1>SurveyJS Library / Runner</h1>
       <Survey
         model={model}
         onComplete={onComplete}
