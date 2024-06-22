@@ -1,28 +1,29 @@
 {
-  "name": "surveyjs_react_quickstart",
-  "version": "0.2.0",
+  "name": "frontend_omniguard360",
   "private": true,
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "^5.0.0",
-    "survey-core": "latest",
-    "survey-react-ui": "latest"
-  },
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts --max_old_space_size=4096 build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
+  "dependencies": {
+    "@omniguard/claim-ai": "file:omniguard-claim-ai-0.1.0.tgz",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "survey-core": "^1.11.3",
+    "survey-react-ui": "^1.11.3"
+  },
   "devDependencies": {
-    "jest-canvas-mock": "^2.3.1",
-    "jest-watch-typeahead": "^0.6.5"
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "vite": "^5.3.1"
   }
 }
