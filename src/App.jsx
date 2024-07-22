@@ -3,7 +3,7 @@ import { useClaim, SurveyClaim } from '@omniguard/claim-ai';
 function App() {
   const claims = useClaim({
     apikey: "KhfWyplt.BplgzanJdg6F1mgzeXqiEgKBGZhSPJmR",
-    functionId: "87631f70-1d2e-48b0-a003-210fd964083a",
+    functionId: "2a9fe68a-23ee-45f2-a2db-834891ba5723",
   });
 
 
